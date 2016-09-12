@@ -60,27 +60,28 @@ Then replace the following folders in to the laravel project created
 	‘Value.php’ is the model for the database
 	‘http’ folder which has the ‘routes.php’ and the controllers folder
 		Controllers folder has the ‘ApiController.php’ file 
+		
+—>  ‘.env’ this is the file in which all settings are set 
 
+	DB_CONNECTION=mysql
+	DB_HOST=127.0.0.1
+	DB_PORT=3306
+	DB_DATABASE=Git_Api    //create a database and pass the value here
+	DB_USERNAME=root
+	DB_PASSWORD=1234
+	
 —>database folder  (htdocs/GitHub_Api/database/migrations)
 	Inside the migrations we have the database migration file
 	‘2016_09_10_042057_Create_Api_Values_table.php’
 	To migrate database run the command- ‘php artisan migrate’
 
 —>resources folder (/MAMP/htdocs/GitHub_Api/resources/views/GitApi)
-	Inside the GitApi file we have the Views ‘results.blade.php’ 	and	‘search.blade.php’
+	Inside the GitApi file we have the Views ‘results.blade.php’ and ‘search.blade.php’
 
 —>config folder (MAMP/htdocs/GitHub_Api/config)
 	we have the app.php which has the application url settings
   	'url' => env('APP_URL', 'http://localhost'),
 
-—>  ‘.env’ this is the file in which all settings are set 
-
-	DB_CONNECTION=mysql
-	DB_HOST=127.0.0.1
-	DB_PORT=3306
-	DB_DATABASE=Git_Api
-	DB_USERNAME=root
-	DB_PASSWORD=1234
 
 —> public folder has the index.php
 Then just go to the application url http://localhost/GitHub_Api/public/
